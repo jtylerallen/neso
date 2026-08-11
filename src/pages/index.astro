@@ -15,42 +15,42 @@ const services = [
 	{
 		title: "Product Strategy",
 		icon: icons.target,
-		body: "We help you craft a winning product strategy built for the realities of modern SaaS. Working closely with your team, we define your target market, surface growth opportunities, and shape a roadmap that maps directly to your business objectives — with AI-driven analysis sharpening every assumption along the way.",
+		body: "A SaaS product strategy built for reality: clear bets, defensible priorities, and a plan your team can actually execute. We pressure-test assumptions alongside you, not from the sidelines.",
 	},
 	{
 		title: "Market Analysis & Research",
 		icon: icons.chart,
-		body: "Great products start with a deep understanding of your customers, competitors, and market. We pair quantitative surveys and qualitative interviews with AI-assisted synthesis to turn raw signal into clear direction, guiding product offerings, feature priorities, and where to innovate next.",
+		body: "Turn market noise into clear direction. We pair customer interviews and quantitative research with AI-assisted synthesis to show you where to play, what to build next, and where to innovate.",
 	},
 	{
-		title: "Pricing Strategy",
+		title: "Pricing & Monetization",
 		icon: icons.tag,
-		body: "The right pricing and packaging can transform your business. Our tailored approach aligns pricing with your goals, drives consistent year-over-year revenue growth, and keeps customers delighted. We use AI to model scenarios and pressure-test packaging before you commit.",
+		body: "Pricing and packaging that capture the value you create. We fold monetization into your roadmap and prioritization from the start, model scenarios, and pressure-test packaging before you commit, so revenue drives what you build instead of trailing it.",
+	},
+	{
+		title: "Roadmap & Priority Development",
+		icon: icons.route,
+		body: "A roadmap and priorities everyone can rally behind. We keep milestones, resourcing, and trade-offs transparent across product, engineering, and leadership, so the team always knows what ships next and why, and nobody gets blindsided.",
+	},
+	{
+		title: "UX & Design Systems",
+		icon: icons.userHeart,
+		body: "An area where AI tooling and solid design patterns can really pay off. Reusable standards cut dependencies and free up cycles, so your team can spend them on the experience customers actually feel instead of reinventing the basics. We prototype, test, and iterate fast, and round out design capability you may be missing.",
+	},
+	{
+		title: "Product-Market Fit",
+		icon: icons.puzzle,
+		body: "Find and prove product-market fit faster. Our iterative process runs from customer discovery through validation to a roadmap that scales what's working.",
+	},
+	{
+		title: "Software Development & DevOps",
+		icon: icons.gear,
+		body: "We tighten the whole path from idea to release: SDLC, product lifecycle, testing, and release process. AI woven in where it removes real friction, so you ship faster with fewer handoffs and less rework, and keep it reliable.",
 	},
 	{
 		title: "Go-to-Market",
 		icon: icons.rocket,
-		body: "We help you launch with impact and sustain momentum. From GTM strategy to customer feedback loops, we guide you across the full product lifecycle — optimizing performance, engagement, and satisfaction. AI-powered tooling helps us move faster and read the market in real time.",
-	},
-	{
-		title: "Roadmap Development",
-		icon: icons.route,
-		body: "We build comprehensive roadmaps that make milestones, priorities, and resourcing clear to everyone. Our process streamlines product development so you ship high-quality work efficiently, with AI-informed forecasting keeping timelines and trade-offs honest.",
-	},
-	{
-		title: "User Centric Design",
-		icon: icons.userHeart,
-		body: "We put your customers at the center of everything. Through user research and thoughtful UX/UI design, we ensure your product delivers an experience that keeps people engaged and coming back — accelerated by AI tools that help us prototype, test, and iterate on ideas quickly.",
-	},
-	{
-		title: "Product Market Fit",
-		icon: icons.puzzle,
-		body: "Product-market fit is a journey, not a milestone. Our iterative process runs from customer discovery through validation and roadmap development, keeping Sales, Marketing, and Customer Success aligned. AI-assisted analysis helps us spot the signals of fit — and its absence — sooner.",
-	},
-	{
-		title: "Product & DevOps",
-		icon: icons.gear,
-		body: "We help you embrace agile methods and streamline delivery end to end. From implementing the right frameworks to enabling rapid iteration and continuous improvement, we help your team ship delightful products faster — with AI woven into the workflow to remove friction.",
+		body: "A go-to-market motion that puts your product in front of the right buyers and converts them. We define positioning, messaging, and channels, then work alongside your team to launch and iterate.",
 	},
 ];
 ---
@@ -74,7 +74,7 @@ const services = [
 		<meta name="generator" content={Astro.generator} />
 		<meta
 			name="description"
-			content="Neso Advisors is a full-stack, AI-enabled product management advisory firm — strategy, research, GTM, and design to help software teams ship better products."
+			content="Fractional, embedded product leadership for software and SaaS teams. We work alongside you on strategy, design, delivery, and GTM, using AI to ship faster."
 		/>
 		<link rel="canonical" href="https://nesoadvisors.com/" />
 
@@ -83,11 +83,11 @@ const services = [
 		<meta property="og:url" content="https://nesoadvisors.com/" />
 		<meta
 			property="og:title"
-			content="Neso Advisors — AI-Enabled Product Management"
+			content="Neso Advisors - Fractional & Embedded Product Leadership"
 		/>
 		<meta
 			property="og:description"
-			content="AI-driven product strategy, design, and go-to-market expertise to help software teams make better decisions, accelerate delivery, and drive measurable growth."
+			content="Fractional, embedded product leadership for software and SaaS teams. We work alongside you on strategy, design, delivery, and GTM, using AI to ship faster."
 		/>
 		<meta
 			property="og:image"
@@ -98,11 +98,11 @@ const services = [
 		<meta name="twitter:card" content="summary" />
 		<meta
 			name="twitter:title"
-			content="Neso Advisors — AI-Enabled Product Management"
+			content="Neso Advisors - Fractional & Embedded Product Leadership"
 		/>
 		<meta
 			name="twitter:description"
-			content="AI-driven product strategy, design, and go-to-market expertise to help software teams make better decisions, accelerate delivery, and drive measurable growth."
+			content="Fractional, embedded product leadership for software and SaaS teams. We work alongside you on strategy, design, delivery, and GTM, using AI to ship faster."
 		/>
 		<meta
 			name="twitter:image"
@@ -114,7 +114,7 @@ const services = [
 			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
 			rel="stylesheet"
 		/>
-		<title>Neso Advisors — AI-Enabled Product Management</title>
+		<title>Neso Advisors - Fractional & Embedded Product Leadership</title>
 	</head>
 	<body>
 		<!-- Google Tag Manager (noscript) -->
@@ -124,7 +124,7 @@ const services = [
 
 		<header class="site-header">
 			<div class="container header-inner">
-				<a href="#top" class="brand" aria-label="Neso Advisors — home">
+				<a href="#top" class="brand" aria-label="Neso Advisors - home">
 					<img
 						src="/images/logo-no-tagline.svg"
 						alt="Neso Advisors"
@@ -142,45 +142,43 @@ const services = [
 		<main id="top">
 			<section class="hero">
 				<div class="container">
-					<p class="eyebrow">AI-Enabled Product Management</p>
+					<p class="eyebrow">Fractional & Embedded Product Leadership</p>
 					<h1>
-						Your full-stack product management partner -
-						supercharged by AI.
+						Your embedded product leader - building teams that
+						ship more than their size.
 					</h1>
 					<p class="hero-sub">
-						Neso Advisors applies AI-driven product strategy, design,
-						and go-to-market expertise to help software teams make
-						better decisions, accelerate delivery, and drive
-						measurable growth.
+						Neso Advisors works hands-on with software and platform
+						teams across strategy, design, delivery, and go-to-market,
+						using AI to round out the skills you're missing and upskill
+						the people you already have, so you ship faster without
+						ballooning headcount.
 					</p>
-					<a href="#contact" class="btn">Start a conversation</a>
+					<a href="#contact" class="btn">Let's talk shop</a>
 				</div>
 			</section>
 
 			<section class="intro">
 				<div class="container">
 					<p>
-						We partner with teams across every stage of the product
-						lifecycle — from first insight to scaled growth —
-						empowering software organizations and supercharging
-						product success. Our approach blends seasoned product
-						judgment with modern, AI-informed tooling, so decisions
-						are grounded in evidence rather than guesswork.
+						We're not sideline advisors. We embed with your team
+						across the product lifecycle, from first insight to
+						scaled growth, and do the actual work alongside you.
+						Sure, there might be a slide deck or two - but shipped product is the point.
 					</p>
 					<p>
-						We understand the competitive challenges you're facing.
-						We fine-tune roadmaps, optimize strategy, and maximize
-						revenue by combining deep market knowledge with AI that
-						helps us analyze faster, model more scenarios, and see
-						patterns others miss. This isn't AI as a pivot — it's
-						simply how Neso operates today.
+						Where your team has gaps in design, QA, DevOps, or
+						reliability, we bring AI tooling, set up right, to round
+						them out and level up the people you already have. Your
+						team gets more capable, not just busier, and decisions
+						get grounded in evidence instead of guesswork.
 					</p>
 					<p>
-						The result is a practice that moves at the speed your
-						market demands, with the rigor your product deserves.
-						Whether you need a fractional product leader or a focused
-						engagement, we meet you where you are and help you get
-						where you're going.
+						Whether you need a fractional product leader for the long
+						haul or a focused engagement to get unstuck, we meet you
+						where you are and help you get where you're going, at the
+						speed your market demands and with the rigor your product
+						deserves.
 					</p>
 				</div>
 			</section>
@@ -189,8 +187,8 @@ const services = [
 				<div class="container">
 					<h2>Services</h2>
 					<p class="section-lead">
-						Practical, senior product leadership across the full
-						lifecycle — each engagement amplified by AI.
+						Senior, hands-on product leadership across the full
+						lifecycle. We embed with your team and ship alongside them.
 					</p>
 					<div class="services-grid">
 						{
@@ -221,8 +219,8 @@ const services = [
 					<h2>Let's build something great</h2>
 					<p>
 						Tell us about your product and where you want to take it.
-						We'll show you how an AI-enabled product practice can help
-						you get there.
+						We'll show you what an embedded, hands-on product partner
+						can do for your team.
 					</p>
 					<form class="contact-form" method="post" action="#">
 						<div class="field">
